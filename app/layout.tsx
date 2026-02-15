@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Dog of the Day — FlareGotLocks",
+  title: "Underdog of the Day — FlareGotLocks",
   description: "The underdog play of the day.",
 };
 

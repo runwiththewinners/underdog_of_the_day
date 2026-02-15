@@ -1157,7 +1157,7 @@ export default function StraightBetsClient({
                   marginBottom: 2,
                 }}
               >
-                FLAREGOTLOCKS • UNDERDOG OF THE DAY
+                FLAREGOTLOCKS • DOG OF THE DAY
               </div>
               <div
                 style={{
@@ -1243,7 +1243,7 @@ export default function StraightBetsClient({
               marginBottom: 4,
             }}
           >
-            <span style={{ color: "#f5f5f5" }}>Underdog Of</span>
+            <span style={{ color: "#f5f5f5" }}>Dog Of</span>
             <br />
             <span
               style={{

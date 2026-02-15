@@ -35,14 +35,14 @@ export async function POST(request: NextRequest) {
     if (experienceId) {
       result = await whopsdk.notifications.create({
         experience_id: experienceId,
-        title: `🔥 New Underdog of the Day — ${sport}`,
+        title: `🔥 New Dog of the Day — ${sport}`,
         subtitle: "FlareGotLocks just dropped a play",
         content: `${team} (${odds}) — Check it now!`,
       });
     } else {
       result = await whopsdk.notifications.create({
         company_id: companyId || COMPANY_ID,
-        title: `🔥 New Underdog of the Day — ${sport}`,
+        title: `🔥 New Dog of the Day — ${sport}`,
         subtitle: "FlareGotLocks just dropped a play",
         content: `${team} (${odds}) — Check it now!`,
       });

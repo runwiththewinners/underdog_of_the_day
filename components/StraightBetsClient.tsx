@@ -1030,8 +1030,8 @@ export default function StraightBetsClient({
               team: playData.team,
               odds: playData.odds,
               sport: playData.sport,
-              // Add your experience_id or company_id here
-              // experienceId: "exp_xxxxxxxx",
+              experienceId: userAccess.experienceId,
+              companyId: "biz_KfwlM1WObd2QW6",
             }),
           });
         } catch (err) {
@@ -1157,7 +1157,7 @@ export default function StraightBetsClient({
                   marginBottom: 2,
                 }}
               >
-                FLAREGOTLOCKS • STRAIGHT BET
+                FLAREGOTLOCKS • DOG OF THE DAY
               </div>
               <div
                 style={{
@@ -1243,7 +1243,7 @@ export default function StraightBetsClient({
               marginBottom: 4,
             }}
           >
-            <span style={{ color: "#f5f5f5" }}>Straight</span>
+            <span style={{ color: "#f5f5f5" }}>Underdog Of</span>
             <br />
             <span
               style={{
@@ -1253,7 +1253,7 @@ export default function StraightBetsClient({
                 WebkitTextFillColor: "transparent",
               }}
             >
-              Bets
+              The Day
             </span>
           </h1>
 
@@ -1266,7 +1266,7 @@ export default function StraightBetsClient({
               lineHeight: 1.6,
             }}
           >
-            Every straight bet play, posted live.
+            The underdog play of the day.
           </p>
         </div>
 

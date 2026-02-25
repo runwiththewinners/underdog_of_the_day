@@ -64,11 +64,11 @@ const RESULT_STYLES: Record<
     glow: "0 0 20px rgba(234, 179, 8, 0.15)",
   },
   pending: {
-    bg: "rgba(0, 255, 106, 0.03)",
-    border: "rgba(0, 255, 106, 0.2)",
+    bg: "rgba(212, 168, 67, 0.03)",
+    border: "rgba(212, 168, 67, 0.2)",
     text: "#9ca3af",
     label: "PENDING",
-    glow: "0 0 20px rgba(0, 255, 106, 0.08)",
+    glow: "0 0 20px rgba(212, 168, 67, 0.08)",
   },
 };
 
@@ -90,7 +90,7 @@ function PlayCard({
   return (
     <div
       style={{
-        background: "#0d1117",
+        background: "#111111",
         border: `1px solid ${result.border}`,
         borderRadius: 16,
         overflow: "hidden",
@@ -103,7 +103,7 @@ function PlayCard({
         style={{
           height: 3,
           background: isPending
-            ? "linear-gradient(90deg, transparent, #00ff6a, transparent)"
+            ? "linear-gradient(90deg, transparent, #d4a843, transparent)"
             : `linear-gradient(90deg, transparent, ${result.text}, transparent)`,
         }}
       />
@@ -127,7 +127,7 @@ function PlayCard({
                 style={{
                   fontSize: 11,
                   fontFamily: "'Courier Prime', monospace",
-                  color: "#00ff6a",
+                  color: "#d4a843",
                   letterSpacing: 2,
                   textTransform: "uppercase",
                   fontWeight: 700,
@@ -152,11 +152,11 @@ function PlayCard({
               style={{
                 fontSize: 11,
                 fontFamily: "'Courier Prime', monospace",
-                color: isPending ? "#00ff6a" : result.text,
+                color: isPending ? "#d4a843" : result.text,
                 background: isPending
-                  ? "rgba(0, 255, 106, 0.1)"
+                  ? "rgba(212, 168, 67, 0.1)"
                   : result.bg,
-                border: `1px solid ${isPending ? "rgba(0, 255, 106, 0.3)" : result.border}`,
+                border: `1px solid ${isPending ? "rgba(212, 168, 67, 0.3)" : result.border}`,
                 borderRadius: 6,
                 padding: "3px 10px",
                 letterSpacing: 2,
@@ -172,8 +172,8 @@ function PlayCard({
         {/* Inner card with pick details */}
         <div
           style={{
-            background: "rgba(0, 255, 106, 0.03)",
-            border: "1px solid rgba(0, 255, 106, 0.1)",
+            background: "rgba(212, 168, 67, 0.03)",
+            border: "1px solid rgba(212, 168, 67, 0.1)",
             borderRadius: 12,
             padding: "16px 20px",
             marginBottom: 16,
@@ -224,7 +224,7 @@ function PlayCard({
           <div
             style={{
               fontSize: 13,
-              color: "#00ff6a",
+              color: "#d4a843",
               fontFamily: "'Courier Prime', monospace",
               marginTop: 6,
             }}
@@ -240,7 +240,7 @@ function PlayCard({
               marginBottom: 16,
               borderRadius: 12,
               overflow: "hidden",
-              border: "1px solid rgba(0, 255, 106, 0.1)",
+              border: "1px solid rgba(212, 168, 67, 0.1)",
               background: "rgba(0,0,0,0.4)",
               position: "relative",
             }}
@@ -255,12 +255,12 @@ function PlayCard({
                 fontWeight: 700,
                 letterSpacing: 1.5,
                 textTransform: "uppercase",
-                color: "#00ff6a",
+                color: "#d4a843",
                 background: "rgba(0,0,0,0.8)",
                 backdropFilter: "blur(8px)",
                 padding: "4px 10px",
                 borderRadius: 6,
-                border: "1px solid rgba(0, 255, 106, 0.2)",
+                border: "1px solid rgba(212, 168, 67, 0.2)",
               }}
             >
               📋 VIEW SLIP
@@ -396,8 +396,8 @@ function PaywallCard({ play }: { play: Play }) {
   return (
     <div
       style={{
-        background: "#0d1117",
-        border: "1px solid rgba(0, 255, 106, 0.15)",
+        background: "#111111",
+        border: "1px solid rgba(212, 168, 67, 0.15)",
         borderRadius: 16,
         overflow: "hidden",
         animation: "fadeSlideIn 0.5s ease forwards",
@@ -406,7 +406,7 @@ function PaywallCard({ play }: { play: Play }) {
       <div
         style={{
           height: 3,
-          background: "linear-gradient(90deg, transparent, #00ff6a, transparent)",
+          background: "linear-gradient(90deg, transparent, #d4a843, transparent)",
         }}
       />
       <div style={{ padding: "20px 24px" }}>
@@ -428,7 +428,7 @@ function PaywallCard({ play }: { play: Play }) {
                 style={{
                   fontSize: 11,
                   fontFamily: "'Courier Prime', monospace",
-                  color: "#00ff6a",
+                  color: "#d4a843",
                   letterSpacing: 2,
                   fontWeight: 700,
                 }}
@@ -466,8 +466,8 @@ function PaywallCard({ play }: { play: Play }) {
         {/* Blurred pick */}
         <div
           style={{
-            background: "rgba(0, 255, 106, 0.03)",
-            border: "1px solid rgba(0, 255, 106, 0.08)",
+            background: "rgba(212, 168, 67, 0.03)",
+            border: "1px solid rgba(212, 168, 67, 0.08)",
             borderRadius: 12,
             padding: "16px 20px",
             marginBottom: 16,
@@ -495,7 +495,7 @@ function PaywallCard({ play }: { play: Play }) {
             <div
               style={{
                 fontSize: 13,
-                color: "#00ff6a",
+                color: "#d4a843",
                 fontFamily: "'Courier Prime', monospace",
                 marginTop: 6,
               }}
@@ -543,8 +543,8 @@ function PaywallCard({ play }: { play: Play }) {
             marginTop: 18,
             padding: "16px 20px",
             borderRadius: 12,
-            background: "rgba(0, 255, 106, 0.04)",
-            border: "1px solid rgba(0, 255, 106, 0.15)",
+            background: "rgba(212, 168, 67, 0.04)",
+            border: "1px solid rgba(212, 168, 67, 0.15)",
             textAlign: "center",
           }}
         >
@@ -553,7 +553,7 @@ function PaywallCard({ play }: { play: Play }) {
               fontSize: 14,
               fontFamily: "'Oswald', sans-serif",
               fontWeight: 700,
-              color: "#00ff6a",
+              color: "#d4a843",
               letterSpacing: 1,
               marginBottom: 6,
             }}
@@ -576,9 +576,9 @@ function PaywallCard({ play }: { play: Play }) {
             style={{
               padding: "10px 28px",
               borderRadius: 10,
-              border: "1px solid rgba(0, 255, 106, 0.4)",
-              background: "rgba(0, 255, 106, 0.1)",
-              color: "#00ff6a",
+              border: "1px solid rgba(212, 168, 67, 0.4)",
+              background: "rgba(212, 168, 67, 0.1)",
+              color: "#d4a843",
               fontSize: 12,
               fontFamily: "'Oswald', sans-serif",
               fontWeight: 700,
@@ -680,8 +680,8 @@ function AdminPanel({
     width: "100%",
     padding: "12px 14px",
     borderRadius: 10,
-    border: "1px solid rgba(0, 255, 106, 0.15)",
-    background: "rgba(0, 255, 106, 0.03)",
+    border: "1px solid rgba(212, 168, 67, 0.15)",
+    background: "rgba(212, 168, 67, 0.03)",
     color: "#f5f5f5",
     fontSize: 14,
     fontFamily: "'Courier Prime', monospace",
@@ -693,7 +693,7 @@ function AdminPanel({
   const labelStyle: React.CSSProperties = {
     fontSize: 10,
     fontFamily: "'Courier Prime', monospace",
-    color: "#00ff6a",
+    color: "#d4a843",
     letterSpacing: 2,
     textTransform: "uppercase",
     marginBottom: 6,
@@ -704,8 +704,8 @@ function AdminPanel({
   return (
     <div
       style={{
-        background: "#0d1117",
-        border: "1px solid rgba(0, 255, 106, 0.2)",
+        background: "#111111",
+        border: "1px solid rgba(212, 168, 67, 0.2)",
         borderRadius: 16,
         overflow: "hidden",
         animation: "fadeSlideIn 0.4s ease forwards",
@@ -714,7 +714,7 @@ function AdminPanel({
       <div
         style={{
           height: 3,
-          background: "linear-gradient(90deg, transparent, #00ff6a, transparent)",
+          background: "linear-gradient(90deg, transparent, #d4a843, transparent)",
         }}
       />
       <div style={{ padding: "24px" }}>
@@ -731,7 +731,7 @@ function AdminPanel({
               fontSize: 14,
               fontFamily: "'Courier Prime', monospace",
               fontWeight: 700,
-              color: "#00ff6a",
+              color: "#d4a843",
               letterSpacing: 3,
               textTransform: "uppercase",
             }}
@@ -769,11 +769,11 @@ function AdminPanel({
               padding: scanPreview ? "12px" : "28px 20px",
               borderRadius: 12,
               border: scanning
-                ? "2px solid rgba(0, 255, 106, 0.4)"
-                : "2px dashed rgba(0, 255, 106, 0.15)",
+                ? "2px solid rgba(212, 168, 67, 0.4)"
+                : "2px dashed rgba(212, 168, 67, 0.15)",
               background: scanning
-                ? "rgba(0, 255, 106, 0.06)"
-                : "rgba(0, 255, 106, 0.02)",
+                ? "rgba(212, 168, 67, 0.06)"
+                : "rgba(212, 168, 67, 0.02)",
               cursor: "pointer",
               transition: "all 0.3s ease",
               overflow: "hidden",
@@ -792,7 +792,7 @@ function AdminPanel({
                   style={{
                     fontSize: 12,
                     fontFamily: "'Courier Prime', monospace",
-                    color: "#00ff6a",
+                    color: "#d4a843",
                     letterSpacing: 2,
                     fontWeight: 700,
                   }}
@@ -817,7 +817,7 @@ function AdminPanel({
                     height: 60,
                     objectFit: "cover",
                     borderRadius: 8,
-                    border: "1px solid rgba(0, 255, 106, 0.2)",
+                    border: "1px solid rgba(212, 168, 67, 0.2)",
                   }}
                 />
                 <div>
@@ -844,7 +844,7 @@ function AdminPanel({
                   style={{
                     fontSize: 12,
                     fontFamily: "'Courier Prime', monospace",
-                    color: "#00ff6a",
+                    color: "#d4a843",
                     letterSpacing: 2,
                     fontWeight: 700,
                     marginBottom: 4,
@@ -892,7 +892,7 @@ function AdminPanel({
           }}
         >
           <div
-            style={{ flex: 1, height: 1, background: "rgba(0, 255, 106, 0.1)" }}
+            style={{ flex: 1, height: 1, background: "rgba(212, 168, 67, 0.1)" }}
           />
           <span
             style={{
@@ -906,7 +906,7 @@ function AdminPanel({
             OR MANUAL
           </span>
           <div
-            style={{ flex: 1, height: 1, background: "rgba(0, 255, 106, 0.1)" }}
+            style={{ flex: 1, height: 1, background: "rgba(212, 168, 67, 0.1)" }}
           />
         </div>
 
@@ -983,7 +983,7 @@ function AdminPanel({
               onChange={(e) => setSport(e.target.value as Sport)}
             >
               {SPORTS.map((s) => (
-                <option key={s} value={s} style={{ background: "#0d1117" }}>
+                <option key={s} value={s} style={{ background: "#111111" }}>
                   {s}
                 </option>
               ))}
@@ -997,7 +997,7 @@ function AdminPanel({
               onChange={(e) => setBetType(e.target.value as BetType)}
             >
               {BET_TYPES.map((b) => (
-                <option key={b} value={b} style={{ background: "#0d1117" }}>
+                <option key={b} value={b} style={{ background: "#111111" }}>
                   {b}
                 </option>
               ))}
@@ -1014,11 +1014,11 @@ function AdminPanel({
             borderRadius: 10,
             border: !team || !odds || !matchup || !time
               ? "1px solid rgba(255,255,255,0.08)"
-              : "1px solid rgba(0, 255, 106, 0.4)",
+              : "1px solid rgba(212, 168, 67, 0.4)",
             background: !team || !odds || !matchup || !time
               ? "rgba(255,255,255,0.03)"
-              : "rgba(0, 255, 106, 0.12)",
-            color: !team || !odds || !matchup || !time ? "#4b5563" : "#00ff6a",
+              : "rgba(212, 168, 67, 0.12)",
+            color: !team || !odds || !matchup || !time ? "#4b5563" : "#d4a843",
             fontSize: 14,
             fontFamily: "'Oswald', sans-serif",
             fontWeight: 700,
@@ -1150,7 +1150,7 @@ export default function StraightBetsClient({
     <div
       style={{
         minHeight: "100vh",
-        background: "#080b0f",
+        background: "#0a0a0a",
         color: "#f5f5f5",
         fontFamily: "'Courier Prime', monospace",
       }}
@@ -1161,8 +1161,8 @@ export default function StraightBetsClient({
           to { opacity: 1; transform: translateY(0); }
         }
         @keyframes pulseGlow {
-          0%, 100% { box-shadow: 0 0 20px rgba(0, 255, 106, 0.08); }
-          50% { box-shadow: 0 0 40px rgba(0, 255, 106, 0.15); }
+          0%, 100% { box-shadow: 0 0 20px rgba(212, 168, 67, 0.08); }
+          50% { box-shadow: 0 0 40px rgba(212, 168, 67, 0.15); }
         }
         @keyframes slideDown {
           from { opacity: 0; transform: translateY(-100%); }
@@ -1170,8 +1170,8 @@ export default function StraightBetsClient({
         }
         ::-webkit-scrollbar { width: 6px; }
         ::-webkit-scrollbar-track { background: transparent; }
-        ::-webkit-scrollbar-thumb { background: rgba(0, 255, 106, 0.2); border-radius: 3px; }
-        select option { background: #0d1117 !important; color: #f5f5f5; }
+        ::-webkit-scrollbar-thumb { background: rgba(212, 168, 67, 0.2); border-radius: 3px; }
+        select option { background: #111111 !important; color: #f5f5f5; }
       `}</style>
 
       {/* Notification Banner */}
@@ -1195,9 +1195,9 @@ export default function StraightBetsClient({
               borderRadius: 14,
               background: "rgba(13,17,23,0.95)",
               backdropFilter: "blur(20px)",
-              border: "1px solid rgba(0, 255, 106, 0.3)",
+              border: "1px solid rgba(212, 168, 67, 0.3)",
               boxShadow:
-                "0 8px 32px rgba(0,0,0,0.5), 0 0 20px rgba(0, 255, 106, 0.1)",
+                "0 8px 32px rgba(0,0,0,0.5), 0 0 20px rgba(212, 168, 67, 0.1)",
               display: "flex",
               alignItems: "center",
               gap: 14,
@@ -1208,8 +1208,8 @@ export default function StraightBetsClient({
                 width: 40,
                 height: 40,
                 borderRadius: 10,
-                background: "rgba(0, 255, 106, 0.12)",
-                border: "1px solid rgba(0, 255, 106, 0.3)",
+                background: "rgba(212, 168, 67, 0.12)",
+                border: "1px solid rgba(212, 168, 67, 0.3)",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
@@ -1224,7 +1224,7 @@ export default function StraightBetsClient({
                 style={{
                   fontSize: 11,
                   fontFamily: "'Courier Prime', monospace",
-                  color: "#00ff6a",
+                  color: "#d4a843",
                   letterSpacing: 2,
                   marginBottom: 2,
                   fontWeight: 700,
@@ -1267,7 +1267,7 @@ export default function StraightBetsClient({
           position: "fixed",
           inset: 0,
           backgroundImage:
-            "radial-gradient(ellipse at 50% 0%, rgba(0, 255, 106, 0.04) 0%, transparent 60%)",
+            "radial-gradient(ellipse at 50% 0%, rgba(212, 168, 67, 0.04) 0%, transparent 60%)",
           pointerEvents: "none",
         }}
       />
@@ -1293,14 +1293,14 @@ export default function StraightBetsClient({
               display: "inline-block",
               fontSize: 10,
               fontFamily: "'Courier Prime', monospace",
-              color: "#00ff6a",
+              color: "#d4a843",
               letterSpacing: 4,
               textTransform: "uppercase",
-              border: "1px solid rgba(0, 255, 106, 0.3)",
+              border: "1px solid rgba(212, 168, 67, 0.3)",
               borderRadius: 100,
               padding: "6px 20px",
               marginBottom: 20,
-              background: "rgba(0, 255, 106, 0.06)",
+              background: "rgba(212, 168, 67, 0.06)",
               fontWeight: 700,
             }}
           >
@@ -1321,7 +1321,7 @@ export default function StraightBetsClient({
             <br />
             <span
               style={{
-                color: "#00ff6a",
+                color: "#d4a843",
               }}
             >
               The Day
@@ -1363,13 +1363,13 @@ export default function StraightBetsClient({
                 borderRadius: 8,
                 border:
                   filter === f.key
-                    ? "1px solid rgba(0, 255, 106, 0.4)"
+                    ? "1px solid rgba(212, 168, 67, 0.4)"
                     : "1px solid rgba(255,255,255,0.08)",
                 background:
                   filter === f.key
-                    ? "rgba(0, 255, 106, 0.1)"
+                    ? "rgba(212, 168, 67, 0.1)"
                     : "rgba(255,255,255,0.02)",
-                color: filter === f.key ? "#00ff6a" : "#6b7280",
+                color: filter === f.key ? "#d4a843" : "#6b7280",
                 fontSize: 12,
                 fontFamily: "'Courier Prime', monospace",
                 fontWeight: 700,
@@ -1468,9 +1468,9 @@ export default function StraightBetsClient({
                   width: "100%",
                   padding: "14px",
                   borderRadius: 12,
-                  border: "1px solid rgba(0, 255, 106, 0.2)",
-                  background: "rgba(0, 255, 106, 0.06)",
-                  color: "#00ff6a",
+                  border: "1px solid rgba(212, 168, 67, 0.2)",
+                  background: "rgba(212, 168, 67, 0.06)",
+                  color: "#d4a843",
                   fontSize: 12,
                   fontFamily: "'Courier Prime', monospace",
                   fontWeight: 700,
